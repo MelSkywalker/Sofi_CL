@@ -1,0 +1,104 @@
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0;
+    background: linear-gradient(#ffebbf 50%, #bfceff 50%);
+    box-sizing: border-box;
+}
+
+.title,
+.subtitle,
+.foot {
+    text-align: center;
+}
+
+.foot {
+    background-color: #e6ffbf;
+    padding: 20px 0;
+}
+
+.figures,
+.names {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.figures {
+    height: 40%;
+}
+
+.names {
+    height: 60%;
+}
+
+.figure {
+    position: relative;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px;
+    background-position: center;
+
+    height: 200px;
+    width: 200px;
+    top: 5px;
+    left: 5px;
+    box-sizing: border-box;
+    border: 2px solid gray;
+    border-radius: 4px;
+    background-color: white;
+
+    touch-action: none;
+    user-select: none;
+}
+
+.text {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    top: 5px;
+    left: 5px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.figure-monitor {
+    background-image: url('https://serving.photos.photobox.com/92993774109318d4f0b965827e90b84a8d98bc8a5e87ec7a891cdf199f4a9ba813b9727e.jpg');
+}
+
+.figure-keyboard {
+    background-image: url('https://serving.photos.photobox.com/7264662365e3fba47646e5c5a8ae03f68e4ef8d8372e31d7f03d0e56f51f88de1066ea5a.jpg');
+}
+
+.figure-mouse {
+    background-image: url('https://serving.photos.photobox.com/6252182169aff392455e4a11e87633125caa7c7696dc845bbfc91e4afb50a556c2a34d91.jpg');
+}
+
+.figure-cpu {
+    background-image: url('https://serving.photos.photobox.com/697434748478aa0ebfd8d3e4f0dad462fb2fc6af8c45f6d2de3e512329c6bc2cce3e335d.jpg');
+}
+
+.figure-usb {
+    background-image: url('https://serving.photos.photobox.com/5048545007948bab2d70a229e07b15584b68cff6c66eddac815d5aad14ccc5fc1b188b41.jpg');
+}
+
+.drop-active {
+    border: 5px dashed;
+}
+
+.drop-target {
+    background-color: #ffcbbf;
+}
+
+.correct {
+    background-color: #e6ffbf;
+}
